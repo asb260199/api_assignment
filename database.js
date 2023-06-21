@@ -8,7 +8,8 @@ dotenv.config({ path: './config.env' });
 //console.log(process.env)
 
 // DB String with Dynamic Password
-const DB = process.env.DB.replace('<PASSWORD>', process.env.DB_PASS);
+// const DB = process.env.DB.replace('<PASSWORD>', process.env.DB_PASS);
+const DB = process.env.DB;
 
 const options = {
   useNewUrlParser: true,
